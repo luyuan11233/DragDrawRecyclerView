@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/id_name"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="#3c2926"
+        android:textSize="12sp"
+        android:text="名称" />
+
+    <com.linkheart.dragdrawrecyclerview.view.CustomHorizontalScrollView
+        android:id="@+id/hor_item_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/id_move_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_tv_price_last"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#3c2926"
+                android:textSize="12sp"
+                android:text="最新价" />
+
+            <TextView
+                android:id="@+id/id_tv_rise_rate24"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#3c2926"
+                android:textSize="12sp"
+                android:text="涨幅" />
+
+            <TextView
+                android:id="@+id/id_tv_vol24"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#3c2926"
+                android:textSize="12sp"
+                android:text="成交量" />
+
+            <TextView
+                android:id="@+id/id_tv_close"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#3c2926"
+                android:textSize="12sp"
+                android:text="收盘价" />
+
+            <TextView
+                android:id="@+id/id_tv_open"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#3c2926"
+                android:textSize="12sp"
+                android:text="开盘价" />
+
+            <TextView
+                android:id="@+id/id_tv_bid"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#3c2926"
+                android:textSize="12sp"
+                android:text="买一价" />
+
+            <TextView
+                android:id="@+id/id_tv_ask"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#3c2926"
+                android:textSize="12sp"
+                android:text="卖一价" />
+
+            <TextView
+                android:id="@+id/id_tv_percent"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#3c2926"
+                android:textSize="12sp"
+                android:text="量比" />
+
+        </LinearLayout>
+    </com.linkheart.dragdrawrecyclerview.view.CustomHorizontalScrollView>
+</LinearLayout>
